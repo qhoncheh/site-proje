@@ -1,0 +1,440 @@
+@import url(font.css);
+
+/* scroll */
+
+#header.scroll{
+	position:fixed;
+    /* top: 0; */
+    
+	width:100%;
+	z-index:1000;
+	height:80px;
+    display: block;
+}
+#header.scroll > .bottomHeder{
+	display:none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: negarRegular; 
+}
+#header{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+#header nav{
+    height: 70px;
+    background-color: #444;
+    color: #fff;
+    /* position: sticky; */
+}
+#header nav > .container-fluid{
+    align-items: center;
+    height: 100%;
+}
+#header nav .container-fluid ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    font-size: 16px;
+}
+#header nav .container-fluid ul li{
+    height: 100%;
+    /* line-height: 70px; */
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+/* right */
+#header nav > .container-fluid .right{
+    height: 100%;
+}
+#header nav .container-fluid .right ul{
+    cursor: pointer;
+}
+
+#header nav > .container-fluid .right .home{
+    background-color: rgb(80, 80, 80);
+    min-width: 50px;
+}
+#header nav > .container-fluid .right ul li{
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+#header nav > .container-fluid .right ul li:hover{
+    background-color: rgb(80, 80, 80);
+}
+#header nav > .container-fluid .right svg{
+    color: #888;
+}
+
+/* left */
+#header nav > .container-fluid .left{
+    height: 100%;
+}
+#header nav .container-fluid .left ul{
+    cursor: default;
+}
+#header nav .container-fluid .left ul li span{
+    cursor: pointer;
+}
+
+#header nav > .container-fluid .left ul li svg{
+    color: #777;
+}
+#header nav > .container-fluid .left ul li.notification svg:hover{
+    color: #fff;
+    cursor: pointer;
+}
+#header nav > .container-fluid .left ul li.register{
+    color: #e5e5e5;
+}
+#header nav > .container-fluid .left ul li.register span:hover{
+    color: #fff;
+}
+#header nav > .container-fluid .left ul li.register svg{
+    position: relative;
+    left: 5px;
+}
+#header nav > .container-fluid .left ul li.login{
+    color: #e5e5e5;
+
+}
+#header nav > .container-fluid .left ul li.login span:hover{
+    color: #fff;
+}
+#header nav > .container-fluid .left ul li.login svg{
+    transform: rotate(-180deg);
+
+}
+#header nav > .container-fluid .left ul li.brand h2{
+    border-right: 1px solid rgba(0, 0, 0, .2); 
+    border-left: 1px solid rgba(0, 0, 0, .2); 
+    width: 120px;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    line-height: 65px;
+    text-align: center;
+    cursor: pointer;
+}
+#header nav h2{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* small nav */
+.smallNav .center{
+    cursor: pointer;
+}
+.smallNav svg{
+    font-size: 20px;
+    color: #777;
+    cursor: pointer;
+}
+.smallNav svg:hover{
+    color: #fff;
+    
+}
+.smallNav .hamburger-menu svg{
+    color: #fff;
+    padding: 5px;
+    background-color: #555;
+}
+
+
+/* show-hide-menu */
+ul.show-hide-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    /* top: 70px; */
+    left: 75px;
+    width: 80%;
+    background-color: #555;
+    transition: 0.4s;
+    overflow: hidden;
+    z-index:10000;
+}
+.show-hide-menu li{
+    padding: 15px;
+    cursor: pointer;
+    /* flex-grow: 1; */
+}
+.show-hide-menu li:hover{
+    background-color: #505050;
+}
+.show-hide-menu li.home{
+    background-color: #505050;
+}
+.show-hide-menu li svg{
+    color: #888;
+}
+
+#navBar {
+	width:calc(clamp(700px,60%,900px) + 200px);
+	margin:1px auto;
+    
+}
+
+#navBar > .holder{
+	/* //background:#fff; */
+	padding:10px;
+	border-radius:5px;	
+	display:inline-block;
+	font-size:14px;
+	cursor:pointer;
+}
+/* header-bottomHeder */
+
+#header > .bottom{
+    width: 100%;
+    height: 240px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-image:  linear-gradient(89.01deg, #3ab0e4 -10.97%, #1abc9c 99.15%);
+}
+#header > .bottom > h1{
+    font-size: 21px;
+    text-align: center;
+    color: #fff;
+}
+#header > .bottom > h1 > a{
+    text-decoration: underline;
+    cursor: pointer;
+} 
+#header > .bottom > h2{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 3px;
+    color: #fff;
+}
+#header > .bottom > .items{
+    height: 40px;
+    width: 95%;
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 30px;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+}
+/*  Search2 */
+#header > .bottom > .items > .search1{
+    width: 280px;
+}
+#header > .bottom > .items > .search1 > input,
+#header > .bottom > .items > .search2 > input,
+#header > .bottom > .items > .search3 > input{
+    height: 100%;
+    width: 280px;
+    outline: none;
+    font-size: 12px;
+
+}
+#header > .bottom > .items > .search2 > input{
+    z-index: 1500;
+    position: relative;
+}
+#header > .bottom > .items > .search2{
+    width: 280px;
+}
+#header > .bottom > .items > .search2 > #overlay2{
+    position: fixed;
+    top: 0;
+    right:0 ;
+    width: 100%;
+    height: 2000px;
+    /* background: rgba(0, 0, 0,0.2); */
+    z-index: 1000;
+    /* backdrop-filter: blur(3px); */
+}
+#header > .bottom > .items > .search2 > #result2{
+    width: 275px;
+    max-height: 350px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    position: absolute;
+    top: 40px;
+    right: 280px;
+}
+#header > .bottom > .items > .search2 > #result2 > div{
+    height: 30px;
+    border-bottom: 1px solid rgba(220, 230, 240, 1);
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+}
+#header > .bottom > .items > .search2 > #result2 > div > span{
+    height: 30px;
+    font-size: 12px;
+
+ }
+
+#header > .bottom > .items > .search2 > #result2 > div:hover{
+    background: rgb(204, 212, 220);
+    cursor: pointer;
+}
+
+/* search3 */
+
+/* #header > .bottom > .items > .search3{
+    width: 280px;
+}
+#header > .bottom > .items > .search3 > input{
+    height: 100%;
+    width: 280px;
+    outline: none;
+    font-size: 12px;
+}
+#header > .bottom > .items > .search3 > input{
+    z-index: 1500;
+    position: relative;
+}
+#header > .bottom > .items > .search3{
+    width: 280px;
+}
+#header > .bottom > .items > .search3 > #overlay3{
+    position: fixed;
+    top: 0;
+    right:0 ;
+    width: 100%;
+    height: 2000px;
+    /* background: rgba(0, 0, 0,0.2); */
+    /* z-index: 1000; */
+    /* backdrop-filter: blur(3px); */
+/* } */
+/* #header > .bottom > .items > .search3 > #result3{
+    width: 275px;
+    max-height: 350px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    position: absolute;
+    top: 40px;
+    right: 280px;
+}
+#header > .bottom > .items > .search3 > #result3 > div{
+    height: 30px;
+    border-bottom: 1px solid rgba(220, 230, 240, 1);
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+}
+#header > .bottom > .items > .search3 > #result3 > div > span{
+    height: 30px;
+    font-size: 12px;
+
+ } */
+
+/* #header > .bottom > .items > .search3 > #result3 > div:hover{
+    background: rgb(204, 212, 220);
+    cursor: pointer;
+} */ 
+
+
+
+
+
+/* button alljobs  */
+
+#header > .bottom > .items > .btn{
+    background: rgb(255, 205, 112);
+    border-bottom: 4px solid rgb(255, 184, 51);
+    margin-left: 3px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: .75rem; 
+    white-space:nowrap;
+}
+#header > .bottom > .alljobs{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+    text-decoration:none;
+    cursor: pointer;
+}  
+
+
+
+
+
+/* Responsive*/
+
+@media (max-width: 1000px) and (min-width: 400px) {
+
+    #header > .bottom > .items > #accardion,
+    #header > .bottom > .items > .search1,
+    #header > .bottom > .items > .search3,
+    #content > .jobSlider > .right {
+        display: none;
+    }
+    #header > .bottom > .items {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    #header > .bottom > .items > .search2,
+    #header > .bottom > .items > .search2 > input{
+    width: 95%;
+    margin: auto;
+    }
+    #content > .jobSlider > .jobgallery {
+        width: 100%;
+    }
+    #header > .bottom > .items > .btn{
+        width: 94%;
+
+
+    }
+    #header > .bottom > .alljobs{
+        margin-top: 15px;
+    }
+}
+
+
+
+/* akharin-agahi */
+
+#content > .akharinAgahi{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: 1px solid lightgrey;
+    height: 100px;
+}
+#content > .akharinAgahi > .text{
+    width: 50%;
+    line-height: 150px;  
+    font-size: 18px;  
+}
+#content > .akharinAgahi > .all{
+    line-height: 150px;
+    text-align: left;
+    text-decoration: underline;
+    color: #3299c6;
+    width: 50%;
+    cursor: pointer;
+}

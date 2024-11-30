@@ -1,0 +1,479 @@
+#content{
+    width: 100%;
+    /* height: 2000px; */
+}
+#content > .resome{ 
+    width: 35%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 45px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    white-space: nowrap;
+}
+#content > .resome > h6{ 
+    font-size: 12px;
+    text-align: center; 
+    line-height: 25px;
+    white-space: nowrap;
+}    
+#content > .resome > h6 > a{     
+    color: #3ab1e4;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Content-slider */
+
+#content  > .jobSlider{
+    height: 220px;
+    width: 900px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+	direction:ltr;
+}
+#content  > .jobSlider > .jobgallery{
+	width:500%;
+	height:100%;
+	transition:0.5s;
+	position:relative;
+	left:0%;
+}
+#content  > .jobSlider > .jobgallery > .items{
+	width:170px;
+	height:95%;
+	float:left;
+	text-align:center;
+	direction:rtl;	
+	margin-right:10px;
+	position:relative;
+}
+#content  > .jobSlider > .jobgallery > .items > p{
+    color: lightslategray;
+    font-size: 12px;
+    padding-top: 10px;
+}
+#content  > .jobSlider > .jobgallery > .items > img{
+	width:45%;
+	border-radius:10px;
+	margin-top:45px;
+}
+#content  > .jobSlider > .jobgallery > .items > .data{
+	color:rgb(47, 147, 240);
+    font-size: 12px;
+}
+#content  > .jobSlider > .jobgallery > .items > .data:hover{
+	color:rgb(50, 107, 160);
+    cursor: pointer;
+}
+#content  > .jobSlider > .right{
+	transition:0.2s;
+
+	background: url("../img/slider/right.png") no-repeat 50%;
+	background-size:70%;
+	
+	width:50px;
+	height:70px;
+	cursor:pointer;
+	
+	position:absolute;
+	top:90px;
+	right:0;
+}
+
+#content  > .jobSlider > .left{
+	transition:0.2s;
+	background: url("../img/slider/left.png") no-repeat 50%;
+	background-size:70%;
+
+	width:50px;
+	height:70px;
+	cursor:pointer;	
+	
+	position:absolute;
+	top:90px;
+	left:0;
+}
+
+
+/* content-sabtenam */
+
+#content > .sabtenam{
+    height: 80px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: rgb(247, 246, 246);
+}
+#content > .sabtenam > .rightMenu{
+    width: 50%;
+}
+#content > .sabtenam > .rightMenu > .rezome{
+    width: 500px;
+    padding: 20px 20px;
+    font-size: 14px;
+    color: gray;
+}
+#content > .sabtenam > .rightMenu > svg{
+    width: 50px;
+    height: 50px;
+}
+#content > .sabtenam > .leftMenu{
+    width: 50%;
+    display: flex;
+    padding-top: 12px;
+    flex-flow: row nowrap;
+    gap:5px;
+}
+#content > .sabtenam > .leftMenu > .text,
+#content > .sabtenam > .leftMenu > .vorood{   
+    margin-right: 15px;
+    margin-top: 18px;
+    width: 50%;
+    height: 50%;
+}
+#content > .sabtenam > .leftMenu > .text {
+    font-size: 12px;
+    border-left: 1px solid rgb(203, 196, 196);
+    color: gray;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#content > .sabtenam > .leftMenu > .text > .txt1{
+    width: 85px;
+    padding: 5px 2px;
+} 
+#content > .sabtenam > .leftMenu > .text > .txt2{
+    width: 100px;
+    padding: 5px 2px;
+    color: #3ab1e4;
+    cursor: pointer;
+}
+#content > .sabtenam > .leftMenu > .vorood > .btn1{
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    background-color: #1abc9c;
+    color: #fff;
+}
+#content > .sabtenam > .leftMenu > .vorood > .btn2{
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    color: #1abc9c;
+    background-color: #fff;
+    border: 1px solid #1abc9c;
+}
+#content > .akharinAgahi {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: 1px solid lightgrey;
+    height: 100px;
+}
+#content > .akharinAgahi > .text {
+    width: 50%;
+    line-height: 150px;
+    font-size: 18px;
+}
+#content > .akharinAgahi > .all {
+    line-height: 150px;
+    text-align: left;
+    text-decoration: none;
+    color: #3299c6;
+    width: 50%;
+    cursor: pointer;
+  }  
+/* Jobs - view1 */
+#content > .view1{
+    height: 1580px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 25px 0 0 0;  
+    gap: 15px; 
+}
+#content > .view1 > .filters{
+    width: 250px;
+    height: 100%;
+}
+#content > .view1 > .filters > .items{
+    width: 250px;
+    height: 200px;
+    border: 1px solid rgb(228, 228, 228);
+    z-index: 20000;
+}
+#content > .view1 > .filters > .items > input{ display: none;}
+#content > .view1 > .filters > .items > label{
+    padding: 5px 55px 2px 0;
+  font-size: 13px;
+  background: url(../img/all/ch03un.PNG) no-repeat 85% 75%;
+    background-size: auto;
+  background-size: 15px;
+  display: block;
+  color: rgb(89, 98, 108);
+  z-index: 2000;
+}
+#content > .view1 > .filters > .items  > input:checked + label {
+	background-image: url(../img/all/ch03.PNG);
+}
+
+#content > .view1 > .filters > .items > div {
+    border-bottom:1px solid rgb(205, 209, 213);
+    height: 40px;
+}
+#content > .view1 > .filters > .items > div > h2{
+    font-size: 14px;
+    padding: 5px 15px 0 0 ;
+}
+#content > .view1 > .filters > .pic{
+    width: 250px;
+ 
+    height: 300px;
+    margin-top: 20px;
+}
+#content > .view1 > .filters > .pic > img{
+    width: 100%;
+    height: 100%;
+}
+#content > .view1 > #leftJob{
+    width: 630px;
+    border:1px solid rgb(228, 228, 228);
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    cursor: pointer;
+}
+/* hide & show */
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/* Start-job */
+#content > .startjob{
+    height: 370px;
+    width: 85%;
+    margin: auto;
+    margin-top: 15px;
+    background: rgb(244, 243, 243);
+}
+#content > .startjob > .top{
+    border-bottom: 1px solid lightgrey;
+    height: 80px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+}
+#content > .startjob > .info{
+    display: flex;
+    height:320px ;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 8px;
+    padding-right: 20px;
+    
+}
+#content > .startjob > .info > .login{
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    display: flex;
+    flex-flow: column wrap;
+}
+#content > .startjob > .info > .login > img{
+    width: 80px;
+    height: 80px;
+}
+#content > .startjob > .info > .login > .items > h6{
+    padding-top: 20px;
+}
+#content > .startjob > .info > .login > .items > span{
+    color: gray;
+    font-size: 12px;
+    
+}
+#content > .startjob > .info > .login >  a{
+    cursor: pointer;
+    color: #3299c6;
+    font-size: 12px;
+    padding-top: 30px;
+}
+/* ashnae - sherkat */
+#content > .sherkat{
+    height: 100px;
+    width: 88%;
+    margin: auto;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+#content > .sherkat > .ashnaei{
+    line-height: 150px;
+    font-size: 18px
+}
+#content > .sherkat > .all{
+    line-height: 150px;
+    font-size: 16px;
+    color: #3299c6;
+    cursor: pointer;
+}
+/* otherjob */
+#content > .otherjobs{
+    height: 500px;
+    border: 1px solid lightgray;
+    width: 88%;
+    margin: 30px auto;
+}
+/* listjobs */
+#content > .listjobs{
+    height: 500px;
+    border: 1px solid lightgray;
+    width: 88%;
+    margin: 30px auto;
+}
+/* weblog - jobinja */
+#content > .weblog{
+    height: 80px;
+    width: 88%;
+    margin: auto;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+#content > .weblog > .web{
+    line-height: 120px;
+    font-size: 18px;
+}
+#content > .weblog > .all{
+        line-height: 120px;
+        font-size: 16px;
+        color: #3299c6;
+        cursor: pointer;
+}
+/* bottomjob */
+#content > .bottomjob{
+    height: 500px;
+    border: 1px solid lightgray;
+    width: 88%;
+    margin: 30px auto;   
+}
+
+
+
+
+
+/* Responsive - Resome */
+
+@media screen and (max-width:970px){
+    #content > .sabtenam{
+        width:80%;
+    }
+	#content > .sabtenam > .rightMenu > .rezome{
+		width:90%;
+        /* font-size: 10px; */
+	}
+    #content > .sabtenam > .leftMenu{
+        width: 60%; 
+        flex-flow: column nowrap; 
+    }
+
+ }
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    #content > .sabtenam > .leftMenu > .text{   
+        width: 70%; 
+        margin-right: 0;
+        margin-top: 5px;
+    }
+
+    #content > .sabtenam > .leftMenu > .text {
+        font-size: 14px;
+        border-left: none;
+    }
+
+    #content > .sabtenam > .leftMenu > .text > .txt1,
+    #content > .sabtenam > .leftMenu > .text > .txt2{
+        width: auto;
+    }
+}
+
+/* Responsive-resome-sizemobile */
+
+@media (max-width: 768px) {
+    #content > .sabtenam {
+        height: 155px;
+        width: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    #content > .sabtenam > .rightMenu {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
+    #content > .sabtenam > .leftMenu{
+        width: 100%;
+    }
+    #content > .sabtenam > .leftMenu > .text{
+        width: 50%;
+        text-align: left;
+        margin: auto;
+        border-left: none;
+    }
+    #content > .sabtenam > .leftMenu > .vorood > .btn1,
+    #content > .sabtenam > .leftMenu > .vorood > .btn2{
+        width: 45%;
+    }
+    #content > .sabtenam > .leftMenu > .vorood{
+        margin-top: 0;
+    }
+}
+
+
+/* Responsive jobsData*/
+@media (max-width: 768px) {
+
+    #content > .view1 > .filters {display: none;}
+    #content > .view1 > #leftJob{
+        width: auto;
+    }
+}
+@media (max-width: 950px) and (min-width: 768px) {
+    #content > .view1 > .filters {display: none;}
+}
+@media (max-width: 600px) {
+    #content > .view1 > #leftJob > .detail { width: 260px;}
+}
+@media (max-width: 550px) {
+    #content > .view1 > #leftJob > .detail { width: 200px;}
+    #content > .view1 > #leftJob  { height: 1500px;}
+    #content > .view1 > #leftJob >  .detail > .pic > img{ width: 35px; height: 35px;}
+    #content > .view1 > #leftJob > .detail > .info > h2{font-size: 12.5px;}
+    #content > .view1 > #leftJob > .detail > .info > .items > ul{ font-size: 10px;}
+}
+
+/* Responsive startJob*/
+
+@media (max-width: 850px)  {
+    #content > .startjob > .info > .login >  .items > h6{font-size: 12px;}
+    #content > .startjob > .info > .login >  .items > span{font-size: 10px;}
+}
+@media (max-width: 700px)  {
+    #content > .startjob > .info > .login >  a{display: none;}
+}
+@media (max-width: 500px)  {
+    #content > .startjob > .info > .login >  .items > h6{font-size: 10px;}
+    #content > .startjob > .info > .login >  .items > span{font-size: 8px;}
+    
+}

@@ -1,0 +1,49 @@
+        for(let i = 0 ; i < jobs.length ; i++){
+            let detailJobs = document.createElement("div");
+            detailJobs.className = "detail";
+
+                let imageJob = document.createElement("div");
+                imageJob.className = "pic";
+
+                    let img = document.createElement("img");
+                    img.src = "img/jobs/" + jobs[i].pic;
+                
+                let infoJob = document.createElement("div");
+                infoJob.className = "info";
+
+                            
+                    let h = document.createElement("h2");
+                    h.innerHTML = jobs[i].title;
+
+                    let items = document.createElement("div");
+                    items.className = "items";
+
+                        let ulData = document.createElement("ul");
+
+                            let liData = document.createElement("li");
+                            liData.innerHTML = jobs[i].detail;
+
+                            let li2Data = document.createElement("li");
+                            li2Data.innerHTML = jobs[i].location;
+
+                            let li3Data = document.createElement("li");
+                            li3Data.innerHTML = jobs[i].object;
+
+
+            ulData.appendChild(liData);
+            ulData.appendChild(li2Data);
+            ulData.appendChild(li3Data);
+
+            items.appendChild(ulData);
+
+            infoJob.appendChild(h);
+            infoJob.appendChild(items);
+
+            imageJob.appendChild(img);
+
+            detailJobs.appendChild(imageJob);
+            detailJobs.appendChild(infoJob);
+
+            leftJob.appendChild(detailJobs);
+
+        }

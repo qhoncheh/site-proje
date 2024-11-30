@@ -1,0 +1,33 @@
+        // search3.onkeyup2 = function(){
+            
+        //     result3.className = "show";
+        //     overlay3.className = "show";
+
+        //     var searched2 = "";
+
+        //     searched2 = jobs.filter(el => el.title.indexOf(this.value) != -1 && this.value != '');
+
+        //     fillSearch2(searched2);
+        // }
+
+        // overlay3.onclick = function(){
+        // result3.className = "hide";
+        // overlay3.className = "hide";
+        // }
+        
+        // function fillSearch2(jsonData2){
+
+        //     result3.innerHTML = []
+        //     for(let el of jsonData2){
+                
+        //         let searchItem2 = document.createElement("div");
+                
+        //             let spanItem2 = document.createElement("span");
+        //             spanItem2.innerHTML = el.title;
+
+        //         searchItem2.appendChild(spanItem2);
+        //         result3.appendChild(searchItem2);
+
+
+        //     }
+        // }

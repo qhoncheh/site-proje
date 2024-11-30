@@ -1,0 +1,10 @@
+@font-face{
+    font-family: negarBold;
+    src: url(Negaar/Negaar\ Regular.ttf.ttf) format(ttf);
+    font-family: negarRegular;
+}
+@font-face{
+    font-family: negarBold;
+    src: url(Negaar/Negaar\ Bold.ttf) format(ttf);
+    font-family: negarBold;
+}

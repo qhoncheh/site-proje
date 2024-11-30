@@ -1,0 +1,113 @@
+/* Jobs - view1 */
+
+
+#content > .view1{
+    height: 1580px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 25px 0 0 0;  
+    gap: 15px; 
+}
+#content > .view1 > .filters{
+    width: 250px;
+    height: 100%;
+    /* border: 1px solid rgb(181, 182, 184); */
+}
+#content > .view1 > .filters > .items{
+    width: 250px;
+    height: 200px;
+    border: 1px solid rgb(228, 228, 228);
+}
+#content > .view1 > .filters > .items > input{ 
+
+display: none;
+}
+
+#content > .view1 > .filters > .items > label{
+
+    padding: 5px 55px 2px 0;
+  font-size: 13px;
+  background: url(../img/all/ch03un.PNG) no-repeat 85% 75%;
+    background-size: auto;
+  background-size: 15px;
+  display: block;
+  color: rgb(89, 98, 108);
+}
+#content > .view1 > .filters > .items  > input:checked + label {
+	background-image: url(../img/all/ch03.PNG);
+}
+
+#content > .view1 > .filters > .items > div {
+    border-bottom:1px solid rgb(205, 209, 213);
+    height: 40px;
+}
+#content > .view1 > .filters > .items > div > h2{
+    font-size: 14px;
+    padding: 5px 15px 0 0 ;
+}
+#content > .view1 > .filters > .pic{
+    width: 250px;
+ 
+    height: 300px;
+    margin-top: 20px;
+}
+#content > .view1 > .filters > .pic > img{
+    width: 100%;
+    height: 100%;
+}
+#content > .view1 > #leftJob{
+    width: 630px;
+    border:1px solid rgb(228, 228, 228);
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+
+}
+#content > .view1 > #leftJob > .detail{
+    height: 150px;
+    width: 280px;
+    border:1px solid rgb(228, 228, 228);
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+#content > .view1 > #leftJob > .detail > .data {
+    display: none;
+}
+#content > .view1 > #leftJob > .detail > .pic{
+    height: 70%;
+    margin: 10px 0 0 0 ;
+}
+#content > .view1 > #leftJob > .detail > .info{
+    height: 100%;
+    margin: 10px 5px 0 0 ;
+    cursor: pointer;
+}
+#content > .view1 > #leftJob >  .detail > .pic > img{ 
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    margin: 5px 10px 0 0;
+}
+#content > .view1 > #leftJob >.detail > .info > h2{
+    color: lightseagreen;
+    font-size: 15px;
+}
+#content > .view1 > #leftJob > .detail > .info > h2:hover{
+    color: blue;
+}
+#content > .view1 > #leftJob > .detail > .info > .items{
+    width: 180px;
+    height: 80%;
+    margin-top: 20px;
+}
+#content > .view1 > #leftJob > .detail > .info > .items > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 30px;
+    color: gray;
+}

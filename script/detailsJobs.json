@@ -1,0 +1,9 @@
+var detailsJobs = [{id:1,title:"مدرس زبان انگلیسی",place:"تهران",category:3,rights:"4000000",text:8,pic:["22.png"]},
+{id:2,title:"کارشناس بازاریابی",place:"تهران",category: 1,rights:"توافقی",text:1,pic:["23.png"] },
+{id:3,title:"کارشناس ارشد فروش",place:"تهران",category: 1,rights:"1000000",text:2,pic:["24.png"]},
+{id:4,title:"کارشناس توسعه محصول",place:"تهران",category: 2,rights:"1000000",text:3,pic:["25.png"]},
+{id:5,title:"مدرس زبان انگلیسی",place:"تهران",category: 3,rights:"توافقی",text:4,pic:["26.png"]},
+{id:6,title:"virtuation Expert",place:"تهران",category:2,rights:"توافقی",text:5,pic:["27.png"]},
+{id:7,title:"مدرس برنامه نویس c#",place:"تهران",category:3,rights:"توافقی",text:6,pic:["28.png"]},
+{id:9,title:"کارشناس فضای مجازی",place:"تهران",category:2,rights:"توافقی",text:7,pic:["29.png"]}
+] 

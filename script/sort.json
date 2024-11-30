@@ -1,0 +1,11 @@
+
+
+
+var sort = [{id:1,fname: " it,server",pic: ["main.jpg"]},
+            {id:2,fname: " it",pic: ["1.jpg"]},
+            {id:3,fname: " it,server",pic: ["1.jpg"]},
+            {id:4,fname: " server",pic: ["1.jpg"]},
+
+
+          
+]
